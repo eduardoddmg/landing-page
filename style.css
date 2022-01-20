@@ -5,6 +5,7 @@ body
 {
     padding: 0;
     margin: 0;
+    outline: none;
 }
 
 * 
@@ -435,12 +436,27 @@ details[open] summary ~ * {
     font-style: italic;
 }
 
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1300px)
 {
+    body
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        width: 100%;
+    }
+    *
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
     /* home */
     .home h1
     {
-        font-size: 45px;   
+        font-size: 35px;   
         margin: 40px 40px;
         text-shadow: 0 0 40px white;
     }
@@ -449,7 +465,7 @@ details[open] summary ~ * {
         color: orangered;
         text-align: center;
         margin: 20px 40px;
-        font-size: 20px;
+        font-size: 17px;
     }
     .video_home
     {
@@ -616,4 +632,12 @@ details[open] summary ~ * {
         text-shadow: 0 0 5px black;
     }
 
+}
+
+@media only screen and (max-width: 1300px) and (orientation: landscape)
+{
+    .video_home
+    {
+        height: 80vh;
+    }
 }
