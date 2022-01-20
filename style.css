@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+/* home */
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+* 
+{
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home
+{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 20px 0px 50px 0;
+}
+
+.home *
+{
+    color: white;
+    font-weight: 10500;
+    text-align: center;
+}
+
+.home h1
+{
+    font-size: 45px;   
+    margin: 40px 280px;
+    text-shadow: 0 0 40px white;
+}
+
+.home p
+{
+    color: orangered;
+    text-align: center;
+    margin: 20px 280px;
+    font-size: 20px;
+}
+
+.video
+{
+    margin: auto;
+    padding: 20px 0;
+}
+
+.video_home
+{
+    box-shadow: 0 0 40px orangered;
+    margin: auto;
+    width: 110vh;
+    height: 60vh;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.home_btn
+{
+    padding-top: 20px;
+    margin: auto;
+}
+
+.home button
+{
+    background-color: rgb(51, 211, 51);
+    color: white;
+    border: none;
+    height: 15vh;
+    width: 60%;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 22px;
+    border-radius: 2em;
+    cursor: pointer;
+    text-align: center;
+    text-align: center;
+}
+
+
+.home button:hover
+{
+    box-shadow: 0 0 20px rgb(51, 211, 51);
+}
+
+.img_compra_segura
+{
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.img_compra_segura img
+{
+    width: 30%;
+}
+
+/* info1 */
+.info1
+{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    padding-top: 50px;
+}
+
+.info_left
+{
+    width: 40%;
+    height: auto;
+    padding-top: 100px;
+}
+
+.info_left img
+{
+    border: 2px solid orangered;
+    width: 90%;
+    border-radius: 2em;
+    box-shadow: 0 0 40px orangered;
+}
+
+.info_right
+{
+    width: 40%;
+    height: auto;
+    padding-top: 50px;
+}
+
+.info_right h3
+{
+    color: orangered;
+    text-shadow: 0 0 40px orangered;
+    font-size: 30px;
+}
+
+.info_right p
+{
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+.fa-arrow-circle-down
+{
+    font-size: 50px;
+    margin-top: 30px;
+    color: orangered;
+}
+
+.arrow_icon
+{
+    width: 100%;
+    text-align: center;
+}
+
+/* feedback */
+.feedback
+{
+    width:100%;
+    height: auto;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.feedback h1
+{
+    color: orangered;
+    text-shadow: 0 0 20px orangered;
+    padding-bottom: 15px;
+    font-size: 40px;
+}
+
+.text_feedback
+{
+    color: white;
+    font-size: 20px;
+    margin: 0 20%;
+}
+
+.card_feedback
+{
+    width: 20%;
+    height: auto;
+    border: 1px solid orangered;
+    padding: 45px;
+    margin: 45px;
+    display: inline-block;
+    color: white;
+    border-radius: 1em;
+    text-align: left;
+}
+
+.fa-user-circle
+{
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: orangered;
+}
+
+.card_feedback p
+{
+    font-size: 18px;
+}
+
+.card_feedback:hover
+{
+    box-shadow: 0 0 10px orangered;
+    transition: 0.5s;
+}
+
+.feedback button
+{
+    background-color: orangered;
+    color: white;
+    border: none;
+    height: 15vh;
+    width: 60%;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 22px;
+    border-radius: 2em;
+    cursor: pointer;
+    text-align: center;
+    text-align: center;
+}
+
+.feedback button:hover
+{
+    box-shadow: 0 0 20px orangered;
+}
+
+/* cards */
+.perguntas
+{
+    width:100%;
+    height: auto;
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+    padding: 20px  0 50px 0;
+    color: white;
+}
+
+details
+{
+    border-bottom: 3px solid orangered;
+    width: 40%;
+    margin: auto;
+    text-align: left;
+    padding: 30px;
+    transition: 0.5s;
+    box-shadow: 0 0 10px black;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+  
+@keyframes sweep {
+    0%    {opacity: 0; transform: translateX(-10px)}
+    100%  {opacity: 1; transform: translateX(0)}
+}
+
+.text_perguntas
+{
+    margin-top: 15px;
+}
+
+.perguntas h1
+{
+    color: orangered;
+    font-size: 45px;
+    text-shadow: 0 0 5px orangered;
+    padding-bottom: 50px;
+}
+/* preco */
+.preco
+{
+    width:100%;
+    height: auto;
+    background-color: rgb(15, 14, 14);
+    text-align: center;
+    padding: 20px 0 40px 0;
+    color: white; 
+}
+
+.preco h1
+{
+    margin: 15px 20%;
+    color: orangered;
+    text-shadow: 0 0 10px orangered;
+    padding-bottom: 20px;
+}
+
+.preco p
+{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.preco h3
+{
+    font-size: 30px;
+    padding: 20px 0;
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.text_price
+{
+    font-size: 70px;
+}
+
+.text_price span
+{
+    font-size: 45px;
+}
+
+.fa-arrow-circle-right
+{
+    color: orangered;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+/* cta */
+.cta
+{
+    width:100%;
+    height: auto;
+    background-color: rgb(22, 22, 22);
+    text-align: center;
+    padding: 20px 0 40px 0;
+    color: white;
+}
+
+.cta h1
+{
+    color: white;
+    font-size: 45px;
+    text-shadow: 0 0 15px orangered;
+}
+.cta h1 span
+{
+    color: orangered;
+}
+
+.card_cta
+{
+    width: 55%;
+    height: auto;
+    border: 1px solid orangered;
+    padding: 45px 45px 25px 45px;
+    color: white;
+    border-radius: 1em;
+    text-align: left;
+    margin: 50px auto;
+    box-shadow: 0 0 20px orangered;
+}
+
+.card_cta h2
+{
+    color: orangered;
+    font-size: 35px;
+}
+
+.card_cta p
+{
+    font-size: 20px;
+    margin: 15px 0 0 0;
+}
+
+.fa-times-circle
+{
+    font-size: 60px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.fa-check-circle
+{
+    font-size: 60px;
+    color: rgb(21, 255, 0);
+    margin-bottom: 20px;
+}
+
+.cta button
+{
+    background-color: rgb(50, 224, 35);
+    color: white;
+    border: none;
+    height: 15vh;
+    width: 60%;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 28px;
+    border-radius: 2em;
+    cursor: pointer;
+    text-align: center;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+
+.cta button:hover
+{
+    box-shadow: 0 0 20px rgb(50, 224, 35);
+}
+
+/* todape */
+.rodape{
+    width:100%;
+    height: auto;
+    background-color: rgb(32, 30, 30);
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+.rodape h3
+{
+    margin: 30px 10%;
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 1000px)
+{
+    /* home */
+    .home h1
+    {
+        font-size: 45px;   
+        margin: 40px 40px;
+        text-shadow: 0 0 40px white;
+    }
+    .home p
+    {
+        color: orangered;
+        text-align: center;
+        margin: 20px 40px;
+        font-size: 20px;
+    }
+    .video_home
+    {
+        width: 80%;
+        height: 40vh;
+    }
+    .home button
+    {
+        height: auto;
+        width: 80%;
+        padding: 20px;
+    }
+    .img_compra_segura img
+    {
+        width: 50%;
+    }
+    /* info */
+    .info1
+    {
+        background-color: white;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .info_left
+    {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .info_right
+    {
+        width: 100%;
+    }
+    .info_right *
+    {
+        padding: 0 20px;
+    }
+    /* feedback */
+    .feedback
+    {
+        width: 100%;
+    }
+    .feedback h1
+    {
+        color: orangered;
+        text-shadow: 0 0 20px orangered;
+        padding-bottom: 15px;
+        font-size: 40px;
+    }
+
+    .text_feedback
+    {
+        color: white;
+        font-size: 20px;
+        margin: 0 10%;
+    }
+
+    .card_feedback
+    {
+        width: 80%;
+        height: auto;
+        border: 1px solid orangered;
+        padding: 45px;
+        margin: 30px;
+        display: inline-block;
+        color: white;
+        border-radius: 1em;
+        text-align: left;
+    }
+
+    .fa-user-circle
+    {
+        font-size: 50px;
+        margin-bottom: 15px;
+        color: orangered;
+    }
+
+    .card_feedback p
+    {
+        font-size: 18px;
+    }
+    .feedback button
+    {
+        background-color: orangered;
+        color: white;
+        border: none;
+        height: auto;
+        width: 80%;
+        padding: 15px;
+        font-weight: bolder;
+        font-size: 22px;
+        border-radius: 2em;
+        cursor: pointer;
+        text-align: center;
+        text-align: center;
+    }
+    /* perguntas */
+    details
+    {
+        width: 80%;
+    }
+    /* preco */
+    .preco h1
+    {
+        margin: 15px 10%;
+        color: orangered;
+        text-shadow: 0 0 10px orangered;
+        padding-bottom: 20px;
+    }
+
+    .preco p
+    {
+        font-size: 20px;
+        margin: 15px 10%;
+    }
+
+    .preco h3
+    {
+        font-size: 30px;
+        padding: 20px 0;
+        text-decoration: line-through;
+        text-decoration-color: red;
+    }
+
+    .text_price
+    {
+        font-size: 70px;
+        text-align: center;
+    }
+    /* cta */
+    .cta h1
+    {
+        margin: 0 10%;
+    }
+
+    .card_cta
+    {
+        width: 80%;
+        height: auto;
+        border: 1px solid orangered;
+        padding: 45px 45px 25px 45px;
+        color: white;
+        border-radius: 1em;
+        text-align: left;
+        margin: 50px auto;
+        box-shadow: 0 0 20px orangered;
+    }
+    .cta button
+    {
+        background-color: rgb(50, 224, 35);
+        color: white;
+        border: none;
+        height: 15vh;
+        width: 70%;
+        padding: 15px;
+        font-weight: bolder;
+        font-size: 28px;
+        border-radius: 2em;
+        cursor: pointer;
+        text-align: center;
+        text-align: center;
+        text-shadow: 0 0 5px black;
+    }
+
+}
